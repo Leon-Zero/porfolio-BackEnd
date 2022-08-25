@@ -1,0 +1,88 @@
+(1,'Leonardo Hidalgo','Leonardo Ismael HIDALGO.', 'Córdoba Capital, Argentina.', 'Licenciatura en tecnología de los alimentos (L.T.A.).', '/assets/perfil.JPG')
+ 
+  
+  "academica": 
+  
+  (1, 'ESTUDIOS UNIVERSITARIOS', 'Universidad Católica de Córdoba',
+  './assets/ucc.png', 'licenciatura en tecnología de los alimentos,facultad de ciencias químicas.', '4to año, sin finalizar', '(Marzo 2012 – Febrero 2016); segundo ingreso (Marzo 2020 – Octubre 2020)')
+  
+ 
+ 
+  "extraCurricular": 
+  
+  
+  (1, 'ayudante',
+  'jornada de tecnología y seguridad alimentaria XIII (08/2015).')
+  
+  (2, 'disertante', 'Proyecto de capacitación de BPM en centro educativo -U.E.P. Nº 88 “FE Y ALEGRÍA- Ciudad de Taco Pozo ,Chaco.')
+     
+     (3, 'disertante', 'proyecto de capacitación destinado a los jóvenes de la calle, fundación La Luciérnaga (SPYRSU)')
+
+  "btnRS": 
+  
+  (1, 'instagram', 'fa-brands fa-instagram', 'https://www.instagram.com/leon_cito94/', 'linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)')
+  
+  (2, 'facebook', 'fa-brands fa-facebook', 'https://www.facebook.com/leon.zeroo.9/', '#3b5999')
+  
+  (3, 'github', 'fa-brands fa-github', 'https://github.com/Leon-Zero', 'linear-gradient(45deg, #aa47aae3 20%, #5c5858 40%, #812681e3 80%)')
+  
+  (4, 'linkedin', 'fa-brands fa-linkedin-in', 'https://www.linkedin.com/in/leonardo-ismael-hidalgo/', '#0077b5')
+  
+  (5, 'whatsapp', 'fa-brands fa-whatsapp', 'https://wa.me/+543516418288?text=Contacta%20conmigo%20a%20trav%C3%A9s%20de%20mi%20WhatsApp!!', '#25d366')
+  
+     
+  
+  "jobs": 
+  
+  (1, 'PINTOR INDEPENDIENTE', 'Ayudante de pintor', 'Pintor de obra en un equipo de trabajo tercerizado por empresas constructoras y contratistas. Trabajo en paredes interiores y exteriores, aberturas y muebles.', '12/2021', 'Daniel Maritano (jefe de pintores) +54 9 351-3700519')
+  
+  (2, 'ECOKIL. Prevención y sanidad integral para empresas', 'Pasante en el departamento de calidad', 'Auditorias, controles e inspecciones bromatológicas y de M.I.P. (manejó integrado de plagas) en industrias y locales. Redacción de informes, manuales y circulares. Elaboración de planos lay-out, respuesta de mails y llamadas, procesamiento de remitos y otros formularios.', '01/10/2016 hasta 15/01/2017.', 'https://www.ecokil.com.ar/grupoecokil/gestion-integral/ - Ecokil S.R.L. oficina central San Jerónimo 2350')
+  
+  
+  "skillPrograming": 
+  
+  
+  (1, 'HTML', 80, '#30E3E3')
+  
+  (2, 'CSS', 75, '#30E3E3')
+  
+  (3, 'JSCRIPT', 60, '#30E3E3')
+  
+  
+  "skillLenguage":
+  
+  
+  (1, 'INGLES escrito', 80, '#007676')
+  (2, 'ESPAÑOL nativo', 100, '#007676')
+  
+  
+  "skillPrograms": [
+    (1, 'INFOSTAT', 75, '#003737')
+    (2, 'MICROSOFT OFFICE', 80, '#003737')
+    (3, 'SketchUP', 50, '#003737')
+    (4, 'CANVAS', 70, '#003737')
+    
+  
+  "skillSoft": 
+  
+  (1, 'capacidad analítica', 'Habilidad para analizar información, números, datos, etc.; procesar esta información de forma lógica; llegar a conclusiones razonadas', 'Beneficios organizacionales: analice las causas fundamentales de los problemas y manipule los números y la información', 83)
+  
+  (2, 'pensamiento creativo', 'Habilidad para crear cosas nuevas e innovar; huir del lugar común', 'Beneficios organizacionales: desarrollar soluciones innovadoras y pensar en nuevas formas de resolver problemas', 98)
+  
+  (3, 'planificación y organización', 'Habilidad para mantener las cosas en orden; estructura de control y lugar', 'Beneficios organizacionales: Formular e implementar procesos y tener excelencia en el flujo de trabajo', 83)
+  
+  (4, 'reflexión', 'Capacidad para reflexionar, autoanalizarse y observar sus estados y fortalezas y debilidades', 'Beneficios organizacionales: acelere el aprendizaje y aporte conocimientos a su posición y su área', 93)
+  
+  (5, 'comunicación', 'Habilidad para comunicarse verbalmente con claridad; transmitir ideas en palabras a individuos o audiencias', 'Beneficios organizacionales: Explicar conceptos difíciles al grupo y transmitir ideas claramente a varias personas.', 72)
+  
+  (6, 'sociabilidad', 'Habilidad para interactuar y crear relaciones con diferentes personas; facilidad en entornos sociales', 'Beneficios organizacionales: trabajar en red con las partes interesadas y conectar a las personas', 70)
+  
+  (7, 'estabilidad emocional', 'Capacidad para mantener la calma en situaciones de presión y para controlar los altibajos emocionales', 'Beneficios organizacionales: mantener al equipo enfocado durante la agitación y mantener el trabajo en movimiento incluso con mucha interferencia externa', 73)
+  
+  (8, 'iniciativa', 'Capacidad de iniciar acciones sin necesidad de intervención de terceros; tomar la iniciativa', 'Beneficios organizacionales: actuar incluso cuando la dirección no está clara y tener un mayor rendimiento de ejecución', 82)
+  
+  (9, 'asertividad', 'Capacidad para poner sus ideas directamente; no te dejes intimidar por el entorno', 'Beneficios organizacionales: Poner sobre la mesa opiniones que otras personas terminan eludiendo y aumentar la eficiencia de la comunicación', 82)
+  
+  (10, 'influencia', 'Capacidad de persuadir a otros para que tomen posiciones y se comporten de manera diferente a como lo harían sin intervención', 'Beneficios organizacionales: Vender ideas a clientes internos y externos y obtener recursos para llevar a cabo proyectos', 57)
+
+      
