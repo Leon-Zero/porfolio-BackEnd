@@ -1,7 +1,7 @@
 
 package com.lhportfolio.spring.repository;
 
-import com.lhportfolio.spring.model.Programacion;
+import com.lhportfolio.spring.entity.Programacion;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -2,7 +2,7 @@
 package com.lhportfolio.spring.controller;
 
 import com.lhportfolio.spring.interfaces.ISoftService;
-import com.lhportfolio.spring.model.Soft;
+import com.lhportfolio.spring.entity.Soft;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;

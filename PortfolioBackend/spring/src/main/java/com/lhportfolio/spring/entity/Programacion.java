@@ -1,5 +1,5 @@
 
-package com.lhportfolio.spring.model;
+package com.lhportfolio.spring.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -12,8 +12,8 @@ import lombok.Setter;
 
 @Getter @Setter
 @Entity
-@Table(name="skilllenguage")
-public class Idioma {
+@Table(name="skillprograming")
+public class Programacion {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,10 +28,10 @@ public class Idioma {
     @Column(name="datos_id")
     private Long datos_id;
 
-    public Idioma() {
+    public Programacion() {
     }
 
-    public Idioma(Long id, String tag, int porcentaje, String color, Long datos_id) {
+    public Programacion(Long id, String tag, int porcentaje, String color, Long datos_id) {
         this.id = id;
         this.tag = tag;
         this.porcentaje = porcentaje;

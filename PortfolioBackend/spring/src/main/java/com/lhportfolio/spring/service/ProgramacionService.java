@@ -2,7 +2,7 @@
 package com.lhportfolio.spring.service;
 
 import com.lhportfolio.spring.interfaces.IProgramacionService;
-import com.lhportfolio.spring.model.Programacion;
+import com.lhportfolio.spring.entity.Programacion;
 import com.lhportfolio.spring.repository.ProgramacionRepository;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;

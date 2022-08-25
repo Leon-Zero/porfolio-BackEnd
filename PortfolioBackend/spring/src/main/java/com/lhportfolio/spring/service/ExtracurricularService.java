@@ -2,7 +2,7 @@
 package com.lhportfolio.spring.service;
 
 import com.lhportfolio.spring.interfaces.IExtracurricularService;
-import com.lhportfolio.spring.model.Extracurricular;
+import com.lhportfolio.spring.entity.Extracurricular;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

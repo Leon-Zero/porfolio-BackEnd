@@ -1,7 +1,7 @@
 
 package com.lhportfolio.spring.interfaces;
 
-import com.lhportfolio.spring.model.Datos;
+import com.lhportfolio.spring.entity.Datos;
 import java.util.List;
 
 

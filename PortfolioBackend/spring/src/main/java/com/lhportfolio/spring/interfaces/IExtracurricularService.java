@@ -1,7 +1,7 @@
 
 package com.lhportfolio.spring.interfaces;
 
-import com.lhportfolio.spring.model.Extracurricular;
+import com.lhportfolio.spring.entity.Extracurricular;
 import java.util.List;
 
 

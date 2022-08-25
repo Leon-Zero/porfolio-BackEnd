@@ -1,7 +1,7 @@
 
 package com.lhportfolio.spring.interfaces;
 
-import com.lhportfolio.spring.model.Programacion;
+import com.lhportfolio.spring.entity.Programacion;
 import java.util.List;
 
 

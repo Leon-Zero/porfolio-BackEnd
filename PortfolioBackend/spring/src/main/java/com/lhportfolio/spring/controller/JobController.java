@@ -2,7 +2,7 @@
 package com.lhportfolio.spring.controller;
 
 import com.lhportfolio.spring.interfaces.IJobService;
-import com.lhportfolio.spring.model.Job;
+import com.lhportfolio.spring.entity.Job;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;

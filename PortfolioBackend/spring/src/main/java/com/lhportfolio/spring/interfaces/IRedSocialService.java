@@ -1,7 +1,7 @@
 
 package com.lhportfolio.spring.interfaces;
 
-import com.lhportfolio.spring.model.RedSocial;
+import com.lhportfolio.spring.entity.RedSocial;
 import java.util.List;
 
 

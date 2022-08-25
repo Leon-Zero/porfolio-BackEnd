@@ -1,7 +1,7 @@
 
 package com.lhportfolio.spring.interfaces;
 
-import com.lhportfolio.spring.model.Idioma;
+import com.lhportfolio.spring.entity.Idioma;
 import java.util.List;
 
 

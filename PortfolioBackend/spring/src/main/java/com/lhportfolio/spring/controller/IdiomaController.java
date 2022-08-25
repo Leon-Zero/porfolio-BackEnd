@@ -2,7 +2,7 @@
 package com.lhportfolio.spring.controller;
 
 import com.lhportfolio.spring.interfaces.IIdiomaService;
-import com.lhportfolio.spring.model.Idioma;
+import com.lhportfolio.spring.entity.Idioma;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;

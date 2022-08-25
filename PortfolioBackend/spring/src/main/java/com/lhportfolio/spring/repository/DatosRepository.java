@@ -1,7 +1,7 @@
 
 package com.lhportfolio.spring.repository;
 
-import com.lhportfolio.spring.model.Datos;
+import com.lhportfolio.spring.entity.Datos;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

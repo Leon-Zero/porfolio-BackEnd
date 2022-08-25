@@ -1,7 +1,7 @@
 
 package com.lhportfolio.spring.interfaces;
 
-import com.lhportfolio.spring.model.Academica;
+import com.lhportfolio.spring.entity.Academica;
 import java.util.List;
 
 public interface IAcademicaService {

@@ -2,7 +2,7 @@
 package com.lhportfolio.spring.interfaces;
 
 import java.util.List;
-import com.lhportfolio.spring.model.Job;
+import com.lhportfolio.spring.entity.Job;
 
 
 public interface IJobService {

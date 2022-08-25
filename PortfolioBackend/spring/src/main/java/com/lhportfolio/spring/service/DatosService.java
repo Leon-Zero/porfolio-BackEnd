@@ -2,7 +2,7 @@
 package com.lhportfolio.spring.service;
 
 import com.lhportfolio.spring.interfaces.IDatosService;
-import com.lhportfolio.spring.model.Datos;
+import com.lhportfolio.spring.entity.Datos;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

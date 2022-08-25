@@ -2,7 +2,7 @@
 package com.lhportfolio.spring.service;
 
 import com.lhportfolio.spring.interfaces.IAcademicaService;
-import com.lhportfolio.spring.model.Academica;
+import com.lhportfolio.spring.entity.Academica;
 import com.lhportfolio.spring.repository.AcademicaRepository;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -2,7 +2,7 @@
 package com.lhportfolio.spring.service;
 
 import com.lhportfolio.spring.interfaces.IRedSocialService;
-import com.lhportfolio.spring.model.RedSocial;
+import com.lhportfolio.spring.entity.RedSocial;
 import com.lhportfolio.spring.repository.RedSocialRepository;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;

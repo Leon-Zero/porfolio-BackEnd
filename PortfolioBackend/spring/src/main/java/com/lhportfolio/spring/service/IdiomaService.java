@@ -2,7 +2,7 @@
 package com.lhportfolio.spring.service;
 
 import com.lhportfolio.spring.interfaces.IIdiomaService;
-import com.lhportfolio.spring.model.Idioma;
+import com.lhportfolio.spring.entity.Idioma;
 import com.lhportfolio.spring.repository.IdiomaRepository;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;

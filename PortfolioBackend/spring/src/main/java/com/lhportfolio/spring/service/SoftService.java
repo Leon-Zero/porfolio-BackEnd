@@ -2,7 +2,7 @@
 package com.lhportfolio.spring.service;
 
 import com.lhportfolio.spring.interfaces.ISoftService;
-import com.lhportfolio.spring.model.Soft;
+import com.lhportfolio.spring.entity.Soft;
 import com.lhportfolio.spring.repository.SoftRepository;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;

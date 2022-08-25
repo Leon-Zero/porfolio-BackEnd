@@ -2,7 +2,7 @@
 package com.lhportfolio.spring.service;
 
 import com.lhportfolio.spring.interfaces.IJobService;
-import com.lhportfolio.spring.model.Job;
+import com.lhportfolio.spring.entity.Job;
 import com.lhportfolio.spring.repository.JobRepository;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;

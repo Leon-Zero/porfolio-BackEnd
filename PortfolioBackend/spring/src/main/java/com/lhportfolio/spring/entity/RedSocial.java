@@ -1,5 +1,5 @@
 
-package com.lhportfolio.spring.model;
+package com.lhportfolio.spring.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -12,28 +12,33 @@ import lombok.Setter;
 
 @Getter @Setter
 @Entity
-@Table(name="skillprograms")
-public class Programas {
+@Table(name="btnrs")
+public class RedSocial {
+    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id")
     private Long id;
-    @Column(name="tag")
-    private String tag;
-    @Column(name="porcentaje")
-    private int porcentaje;
+    
+    @Column(name="red_social")
+    private String red_social;
+    @Column(name="btn")
+    private String btn;
+    @Column(name="url")
+    private String url;
     @Column(name="color")
     private String color;
     @Column(name="datos_id")
     private Long datos_id;
 
-    public Programas() {
+    public RedSocial() {
     }
 
-    public Programas(Long id, String tag, int porcentaje, String color, Long datos_id) {
+    public RedSocial(Long id, String red_social, String btn, String url, String color, Long datos_id) {
         this.id = id;
-        this.tag = tag;
-        this.porcentaje = porcentaje;
+        this.red_social = red_social;
+        this.btn = btn;
+        this.url = url;
         this.color = color;
         this.datos_id = datos_id;
     }

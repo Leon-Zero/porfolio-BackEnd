@@ -1,6 +1,6 @@
 package com.lhportfolio.spring.controller;
 
-import com.lhportfolio.spring.model.Datos;
+import com.lhportfolio.spring.entity.Datos;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

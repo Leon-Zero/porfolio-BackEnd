@@ -1,5 +1,5 @@
 
-package com.lhportfolio.spring.model;
+package com.lhportfolio.spring.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
