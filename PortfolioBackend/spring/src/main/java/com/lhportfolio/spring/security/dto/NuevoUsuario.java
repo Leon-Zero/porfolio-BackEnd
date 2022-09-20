@@ -1,14 +1,25 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package com.lhportfolio.spring.security.dto;
 
-/**
- *
- * @author Leonardo
- */
+import java.util.HashSet;
+import java.util.Set;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter @Setter
 public class NuevoUsuario {
+    
+    @NotBlank
+    private String nombre;
+    @NotBlank
+    private String nombreUsuario;
+    @Email
+    private String email;
+    @NotBlank
+    private String password;
+    private Set<String> roles = new HashSet<>();
+
     
 }
