@@ -24,8 +24,8 @@ public class Extracurricular {
     @Column(name="actividad")
     private String actividad;
     
-    @Column(name="academica_id")
-    private Long academica_id;
+   // @Column(name="academica_id")
+   // private Long academica_id;
 
     public Extracurricular() {
     }
@@ -34,7 +34,7 @@ public class Extracurricular {
         this.id = id;
         this.tipo = tipo;
         this.actividad = actividad;
-        this.academica_id = academica_id;
+        //this.academica_id = academica_id;
     }
     
 }

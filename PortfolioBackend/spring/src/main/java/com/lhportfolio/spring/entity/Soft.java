@@ -7,10 +7,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import lombok.Getter;
-import lombok.Setter;
 
-@Getter @Setter
 @Entity
 @Table(name="skillsoft")
 public class Soft {
@@ -28,7 +25,57 @@ public class Soft {
     private String beneficio;
     @Column(name="porcentaje")
     private int porcentaje;
-    @Column(name="datos_id")
-    private Long datos_id;
+    
+    public Soft() {
+    }
+
+    public Soft(Long id, String tag, String modal, String beneficio, int porcentaje) {
+        this.id = id;
+        this.tag = tag;
+        this.modal = modal;
+        this.beneficio = beneficio;
+        this.porcentaje = porcentaje;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getTag() {
+        return tag;
+    }
+
+    public String getModal() {
+        return modal;
+    }
+
+    public String getBeneficio() {
+        return beneficio;
+    }
+
+    public int getPorcentaje() {
+        return porcentaje;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setTag(String tag) {
+        this.tag = tag;
+    }
+
+    public void setModal(String modal) {
+        this.modal = modal;
+    }
+
+    public void setBeneficio(String beneficio) {
+        this.beneficio = beneficio;
+    }
+
+    public void setPorcentaje(int porcentaje) {
+        this.porcentaje = porcentaje;
+    }
+  
     
 }

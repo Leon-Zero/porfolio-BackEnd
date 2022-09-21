@@ -30,8 +30,8 @@ public class Job {
     private String ingreso_salida;
     @Column(name="contacto")
     private String contacto;
-    @Column(name="datos_id")
-    private Long datos_id;
+   // @Column(name="datos_id")
+   // private Long datos_id;
 
     public Job() {
     }
@@ -43,7 +43,7 @@ public class Job {
         this.funciones = funciones;
         this.ingreso_salida = ingreso_salida;
         this.contacto = contacto;
-        this.datos_id = datos_id;
+     //   this.datos_id = datos_id;
     }
     
     

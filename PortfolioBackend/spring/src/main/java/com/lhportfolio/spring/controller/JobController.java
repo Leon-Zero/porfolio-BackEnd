@@ -5,6 +5,7 @@ import com.lhportfolio.spring.interfaces.IJobService;
 import com.lhportfolio.spring.entity.Job;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -21,28 +22,33 @@ public class JobController {
     
      @Autowired
     private IJobService jobServ;
-       
+     
+    @GetMapping ("/jobs")
+    @ResponseBody
+    public List<Job> verJob(){
+       return jobServ.verJob();
+    } 
+    
+    @PreAuthorize("hasRole('ADMIN')") 
     @PostMapping ("/jobs")
     public void agregarJob(@RequestBody Job job){
         jobServ.crearJob(job);
     }
     
-    @GetMapping ("/jobs")
-    @ResponseBody
-    public List<Job> verJob(){
-       return jobServ.verJob();
-    }
-    
+    @PreAuthorize("hasRole('ADMIN')")
     @GetMapping ("/jobs/{id}")
     @ResponseBody
     public Job selectJobs( @PathVariable Long id){
        return jobServ.buscarJob(id);
     }
     
+    @PreAuthorize("hasRole('ADMIN')")
     @DeleteMapping ("/jobs/{id}")
     public void borrarJob (@PathVariable Long id){
         jobServ.borrarJob(id);
     }
+    
+    @PreAuthorize("hasRole('ADMIN')")
     @PutMapping ("/jobs/{id}")
     public void editarJob (@RequestBody Job job, Long id){
         jobServ.editarJob(job);

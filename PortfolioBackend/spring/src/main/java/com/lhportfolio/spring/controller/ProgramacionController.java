@@ -5,6 +5,7 @@ import com.lhportfolio.spring.interfaces.IProgramacionService;
 import com.lhportfolio.spring.entity.Programacion;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -19,28 +20,33 @@ public class ProgramacionController {
      //metodos clase Programacion
        @Autowired
     private IProgramacionService pcionServ;
-       
-    @PostMapping ("/programacion")
-    public void agregarProgramacion(@RequestBody Programacion pcion){
-        pcionServ.crearPcion(pcion);
-    }
     
     @GetMapping ("/programacion")
     @ResponseBody
     public List<Programacion> verPcion(){
        return pcionServ.verPcion();
     }
+       
+    @PreAuthorize("hasRole('ADMIN')")
+    @PostMapping ("/programacion")
+    public void agregarProgramacion(@RequestBody Programacion pcion){
+        pcionServ.crearPcion(pcion);
+    }
     
+    @PreAuthorize("hasRole('ADMIN')")
     @GetMapping ("/programacion/{id}")
     @ResponseBody
     public Programacion selectPcion( @PathVariable Long id){
        return pcionServ.buscarPcion(id);
     }
     
+    @PreAuthorize("hasRole('ADMIN')")
     @DeleteMapping ("/programacion/{id}")
     public void borrarProgramacion (@PathVariable Long id){
         pcionServ.borrarPcion(id);
     }
+    
+    @PreAuthorize("hasRole('ADMIN')")
     @PutMapping ("/programacion/{id}")
     public void editarPcion (@RequestBody Programacion pcion, Long id){
         pcionServ.editarPcion(pcion);

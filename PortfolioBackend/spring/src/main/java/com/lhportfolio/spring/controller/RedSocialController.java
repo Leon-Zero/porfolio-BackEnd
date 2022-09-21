@@ -5,6 +5,7 @@ import com.lhportfolio.spring.interfaces.IRedSocialService;
 import com.lhportfolio.spring.entity.RedSocial;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -20,11 +21,6 @@ public class RedSocialController {
     
     @Autowired
     private IRedSocialService rsServ;
-       
-    @PostMapping ("/btnrs")
-    public void agregarRS(@RequestBody RedSocial rs){
-        rsServ.crearRS(rs);
-    }
     
     @GetMapping ("/btnrs")
     @ResponseBody
@@ -32,16 +28,26 @@ public class RedSocialController {
        return rsServ.verRS();
     }
     
+    @PreAuthorize("hasRole('ADMIN')")
+    @PostMapping ("/btnrs")
+    public void agregarRS(@RequestBody RedSocial rs){
+        rsServ.crearRS(rs);
+    }
+    
+    @PreAuthorize("hasRole('ADMIN')")
     @GetMapping ("/btnrs/{id}")
     @ResponseBody
     public RedSocial selectRS( @PathVariable Long id){
        return rsServ.buscarRS(id);
     }
     
+    @PreAuthorize("hasRole('ADMIN')")
     @DeleteMapping ("/btnrs/{id}")
     public void borrarRS (@PathVariable Long id){
         rsServ.borrarRS(id);
     }
+    
+    @PreAuthorize("hasRole('ADMIN')")
     @PutMapping ("/btnrs/{id}")
     public void editarRS (@RequestBody RedSocial rs, Long id){
         rsServ.editarRS(rs);

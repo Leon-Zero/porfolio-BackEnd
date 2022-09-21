@@ -24,8 +24,8 @@ public class Programas {
     private int porcentaje;
     @Column(name="color")
     private String color;
-    @Column(name="datos_id")
-    private Long datos_id;
+    //@Column(name="datos_id")
+    //private Long datos_id;
 
     public Programas() {
     }
@@ -35,7 +35,7 @@ public class Programas {
         this.tag = tag;
         this.porcentaje = porcentaje;
         this.color = color;
-        this.datos_id = datos_id;
+      //  this.datos_id = datos_id;
     }
     
     

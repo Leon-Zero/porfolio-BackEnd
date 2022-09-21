@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import com.lhportfolio.spring.interfaces.IDatosService;
+import org.springframework.security.access.prepost.PreAuthorize;
 
 @RestController
 public class DatosController {
@@ -24,12 +25,14 @@ public class DatosController {
        return datosServ.verDatos();
     }
     
+    @PreAuthorize("hasRole('ADMIN')")
     @GetMapping ("/datos/{id}")
     @ResponseBody
     public Datos selectDatos( @PathVariable Long id){
        return datosServ.buscarDatos(id);
     }
     
+    @PreAuthorize("hasRole('ADMIN')")
     @PutMapping ("/datos/{id}")
     public void editarDatos (@RequestBody Datos dat, Long id){
         datosServ.editarDatos(dat);

@@ -28,8 +28,8 @@ public class RedSocial {
     private String url;
     @Column(name="color")
     private String color;
-    @Column(name="datos_id")
-    private Long datos_id;
+    //@Column(name="datos_id")
+    //private Long datos_id;
 
     public RedSocial() {
     }
@@ -40,7 +40,7 @@ public class RedSocial {
         this.btn = btn;
         this.url = url;
         this.color = color;
-        this.datos_id = datos_id;
+      //  this.datos_id = datos_id;
     }
     
     

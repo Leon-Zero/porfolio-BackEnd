@@ -80,7 +80,6 @@ public class AuthController {
         UserDetails userDetails = (UserDetails)authentication.getPrincipal();
         JwtDto jwtDto = new JwtDto(jwt, userDetails.getUsername(), userDetails.getAuthorities());
         return new ResponseEntity(jwtDto, HttpStatus.OK);
-
     }
     
 }

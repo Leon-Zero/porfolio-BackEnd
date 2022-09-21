@@ -9,10 +9,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
-import lombok.Getter;
-import lombok.Setter;
 
-@Getter @Setter
 @Entity
 public class Rol {
     
@@ -21,15 +18,30 @@ public class Rol {
     private int id;
     @NotNull
     @Enumerated(EnumType.STRING)
-    private RolNombre rolnombre;
+    private RolNombre rolNombre;
 
     public Rol() {
     }
 
-    public Rol(RolNombre rolnombre) {
-        this.rolnombre = rolnombre;
+    public Rol(RolNombre rolNombre) {
+        this.rolNombre = rolNombre;
     }
-    
-    
+
+    public int getId() {
+        return id;
+    }
+
+    public RolNombre getRolNombre() {
+        return rolNombre;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setRolNombre(RolNombre rolNombre) {
+        this.rolNombre = rolNombre;
+    }
+
     
 }

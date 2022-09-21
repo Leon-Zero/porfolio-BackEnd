@@ -33,8 +33,8 @@ public class Academica {
     @Column(name="ingreso")
     private String ingreso;
     
-    @Column(name="datos_id")
-    private Long datos_id;
+    //@Column(name="datos_id")
+    //private Long datos_id;
 
     public Academica() {
     }
@@ -47,7 +47,7 @@ public class Academica {
         this.carrera = carrera;
         this.estado = estado;
         this.ingreso = ingreso;
-        this.datos_id = datos_id;
+       // this.datos_id = datos_id;
     }
 
    
