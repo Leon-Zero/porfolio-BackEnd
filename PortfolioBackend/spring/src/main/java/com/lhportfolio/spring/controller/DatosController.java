@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import com.lhportfolio.spring.interfaces.IDatosService;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 
 @RestController
 public class DatosController {
@@ -23,6 +25,18 @@ public class DatosController {
     @ResponseBody
     public List<Datos> verDatos(){
        return datosServ.verDatos();
+    }
+    
+    @PreAuthorize("hasRole('ADMIN')")
+    @PostMapping ("/datos")
+    public void agregarDatos(@RequestBody Datos datos){
+        datosServ.crearDatos(datos);
+    }
+    
+    @PreAuthorize("hasRole('ADMIN')")
+    @DeleteMapping ("/datos/{id}")
+    public void borrarDatos (@PathVariable Long id){
+        datosServ.borrarDatos(id);
     }
     
     @PreAuthorize("hasRole('ADMIN')")

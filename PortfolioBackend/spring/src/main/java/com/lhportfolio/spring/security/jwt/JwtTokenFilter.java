@@ -44,7 +44,7 @@ public class JwtTokenFilter extends OncePerRequestFilter{
             SecurityContextHolder.getContext().setAuthentication(auth);
             }
         } catch(Exception e){
-            logger.error("fail en el metodo doFilter");
+            logger.error("fail en el metodo doFilter" + e.getMessage());
         }
         filterChain.doFilter(req, res);
     }
@@ -52,7 +52,7 @@ public class JwtTokenFilter extends OncePerRequestFilter{
     private String getToken(HttpServletRequest request){
         String header = request.getHeader("Authorization");
         if(header != null && header.startsWith("Bearer"))
-            return header.replace("Bearer","");
+            return header.replace("Bearer ","");
             return null;
     }
     

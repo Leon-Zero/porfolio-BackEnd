@@ -34,6 +34,7 @@ public class SoftController {
         softServ.crearSoft(soft);
     }
     
+    @PreAuthorize("hasRole('ADMIN')")
     @GetMapping ("/soft/{id}")
     @ResponseBody
     public Soft selectSoft( @PathVariable Long id){

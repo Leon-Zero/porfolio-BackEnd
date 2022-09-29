@@ -2,10 +2,9 @@
 package com.lhportfolio.spring.security.dto;
 
 public class Mensaje {
-    
     private String mensaje;
-    
-    public Mensaje(String mensaje){
+
+    public Mensaje(String mensaje) {
         this.mensaje = mensaje;
     }
 
@@ -16,6 +15,4 @@ public class Mensaje {
     public void setMensaje(String mensaje) {
         this.mensaje = mensaje;
     }
-    
-    
 }

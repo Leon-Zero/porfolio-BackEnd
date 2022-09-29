@@ -18,6 +18,16 @@ public class DatosService implements IDatosService {
     public List<Datos> verDatos() {
     return datosRepo.findAll();
     }
+    
+    @Override
+    public void crearDatos(Datos datos) {
+    datosRepo.save(datos);
+    }
+    
+    @Override
+    public void borrarDatos(Long id) {
+    datosRepo.deleteById(id);
+    }
 
     @Override
     public Datos buscarDatos(Long id) {

@@ -13,16 +13,15 @@ public class LoginUsuario {
         return nombreUsuario;
     }
 
-    public String getPassword() {
-        return password;
-    }
-
     public void setNombreUsuario(String nombreUsuario) {
         this.nombreUsuario = nombreUsuario;
+    }
+
+    public String getPassword() {
+        return password;
     }
 
     public void setPassword(String password) {
         this.password = password;
     }
-    
 }
