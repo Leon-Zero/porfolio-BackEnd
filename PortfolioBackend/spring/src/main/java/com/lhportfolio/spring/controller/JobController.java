@@ -6,6 +6,7 @@ import com.lhportfolio.spring.entity.Job;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,6 +17,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:4200")
 public class JobController {
     
        //metodos clase Job
@@ -23,36 +25,34 @@ public class JobController {
      @Autowired
     private IJobService jobServ;
      
-    @GetMapping ("/jobs")
+    @GetMapping("/jobs")
     @ResponseBody
-    public List<Job> verJob(){
+    public List<Job>verJob(){
        return jobServ.verJob();
     } 
     
     @PreAuthorize("hasRole('ADMIN')") 
-    @PostMapping ("/jobs")
+    @PostMapping("/jobs")
     public void agregarJob(@RequestBody Job job){
         jobServ.crearJob(job);
     }
     
     @PreAuthorize("hasRole('ADMIN')")
-    @GetMapping ("/jobs/{id}")
+    @GetMapping("/jobs/{id}")
     @ResponseBody
-    public Job selectJobs( @PathVariable Long id){
+    public Job selectJobs(@PathVariable Long id){
        return jobServ.buscarJob(id);
     }
     
     @PreAuthorize("hasRole('ADMIN')")
-    @DeleteMapping ("/jobs/{id}")
-    public void borrarJob (@PathVariable Long id){
+    @DeleteMapping("/jobs/{id}")
+    public void borrarJob(@PathVariable Long id){
         jobServ.borrarJob(id);
     }
     
     @PreAuthorize("hasRole('ADMIN')")
-    @PutMapping ("/jobs/{id}")
-    public void editarJob (@RequestBody Job job, Long id){
+    @PutMapping("/jobs/{id}")
+    public void editarJob(@PathVariable Long id, @RequestBody Job job){
         jobServ.editarJob(job);
     }
-
-    
 }

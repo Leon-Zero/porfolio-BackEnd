@@ -11,10 +11,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import com.lhportfolio.spring.interfaces.IDatosService;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:4200")
 public class DatosController {
     
     //metodos clase Datos
@@ -48,7 +50,7 @@ public class DatosController {
     
     @PreAuthorize("hasRole('ADMIN')")
     @PutMapping ("/datos/{id}")
-    public void editarDatos (@RequestBody Datos dat, Long id){
+    public void editarDatos (@PathVariable Long id, @RequestBody Datos dat){
         datosServ.editarDatos(dat);
     }
       

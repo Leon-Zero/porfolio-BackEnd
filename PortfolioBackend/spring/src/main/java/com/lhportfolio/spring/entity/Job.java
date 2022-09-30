@@ -30,22 +30,16 @@ public class Job {
     private String ingreso_salida;
     @Column(name="contacto")
     private String contacto;
-   // @Column(name="datos_id")
-   // private Long datos_id;
 
     public Job() {
     }
 
-    public Job(Long id, String job, String cargo, String funciones, String ingreso_salida, String contacto, Long datos_id) {
+    public Job(Long id, String job, String cargo, String funciones, String ingreso_salida, String contacto) {
         this.id = id;
         this.job = job;
         this.cargo = cargo;
         this.funciones = funciones;
         this.ingreso_salida = ingreso_salida;
         this.contacto = contacto;
-     //   this.datos_id = datos_id;
     }
-    
-    
-    
 }

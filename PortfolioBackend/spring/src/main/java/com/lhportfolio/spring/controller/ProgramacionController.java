@@ -6,6 +6,7 @@ import com.lhportfolio.spring.entity.Programacion;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,6 +17,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:4200")
 public class ProgramacionController {
      //metodos clase Programacion
        @Autowired
@@ -48,7 +50,7 @@ public class ProgramacionController {
     
     @PreAuthorize("hasRole('ADMIN')")
     @PutMapping ("/programacion/{id}")
-    public void editarPcion (@RequestBody Programacion pcion, Long id){
+    public void editarPcion (@PathVariable Long id, @RequestBody Programacion pcion){
         pcionServ.editarPcion(pcion);
     }
 }

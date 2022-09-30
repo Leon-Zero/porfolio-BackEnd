@@ -6,6 +6,7 @@ import com.lhportfolio.spring.entity.RedSocial;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,6 +17,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:4200")
 public class RedSocialController {
         //metodos clase Red Social
     
@@ -49,7 +51,7 @@ public class RedSocialController {
     
     @PreAuthorize("hasRole('ADMIN')")
     @PutMapping ("/btnrs/{id}")
-    public void editarRS (@RequestBody RedSocial rs, Long id){
+    public void editarRS (@PathVariable Long id, @RequestBody RedSocial rs){
         rsServ.editarRS(rs);
     }
 }
