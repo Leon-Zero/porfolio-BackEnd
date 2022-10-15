@@ -20,26 +20,24 @@ public class Academica {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id")
     private Long id;
-    @Column(name="titulo_tag")
-    private String titulo_tag;
-    @Column(name="instituto")
-    private String instituto;
-    @Column(name="logo")
-    private String logo;
-    @Column(name="carrera")
-    private String carrera;
-    @Column(name="estado")
-    private String estado;
-    @Column(name="ingreso")
-    private String ingreso;
     
-    //@Column(name="datos_id")
-    //private Long datos_id;
+    @Column(name="titulo_tag", length = 80)
+    private String titulo_tag;
+    @Column(name="instituto", length = 250)
+    private String instituto;
+    @Column(name="logo", length = 250)
+    private String logo;
+    @Column(name="carrera", length = 250)
+    private String carrera;
+    @Column(name="estado", length = 100)
+    private String estado;
+    @Column(name="ingreso", length = 120)
+    private String ingreso;
 
     public Academica() {
     }
 
-    public Academica(Long id, String titulo_tag, String instituto, String logo, String carrera, String estado, String ingreso, Long datos_id) {
+    public Academica(Long id, String titulo_tag, String instituto, String logo, String carrera, String estado, String ingreso) {
         this.id = id;
         this.titulo_tag = titulo_tag;
         this.instituto = instituto;
@@ -47,7 +45,6 @@ public class Academica {
         this.carrera = carrera;
         this.estado = estado;
         this.ingreso = ingreso;
-       // this.datos_id = datos_id;
     }
 
    

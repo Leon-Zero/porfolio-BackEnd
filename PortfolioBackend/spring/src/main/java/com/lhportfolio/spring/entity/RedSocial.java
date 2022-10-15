@@ -20,13 +20,13 @@ public class RedSocial {
     @Column(name="id")
     private Long id;
     
-    @Column(name="red_social")
+    @Column(name="red_social", length = 25)
     private String red_social;
-    @Column(name="btn")
+    @Column(name="btn", length = 100)
     private String btn;
-    @Column(name="url")
+    @Column(name="url", length = 250)
     private String url;
-    @Column(name="color")
+    @Column(name="color", length = 100)
     private String color;
    
 

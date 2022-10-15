@@ -19,22 +19,19 @@ public class Extracurricular {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id")
     private Long id;
-    @Column(name="tipo")
-    private String tipo;
-    @Column(name="actividad")
-    private String actividad;
     
-   // @Column(name="academica_id")
-   // private Long academica_id;
+    @Column(name="tipo", length = 50)
+    private String tipo;
+    @Column(name="actividad", length = 300)
+    private String actividad;
 
     public Extracurricular() {
     }
 
-    public Extracurricular(Long id, String tipo, String actividad, Long academica_id) {
+    public Extracurricular(Long id, String tipo, String actividad) {
         this.id = id;
         this.tipo = tipo;
         this.actividad = actividad;
-        //this.academica_id = academica_id;
     }
     
 }

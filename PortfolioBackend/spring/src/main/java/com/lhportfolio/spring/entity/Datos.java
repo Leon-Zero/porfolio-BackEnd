@@ -19,15 +19,16 @@ public class Datos {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id")
     private Long id;
-    @Column(name="title_name")
+    
+    @Column(name="title_name", length = 50)
     private String title_name;
-    @Column(name="name")
+    @Column(name="name", length = 50)
     private String name;
-    @Column(name="ubicacion")
+    @Column(name="ubicacion", length = 80)
     private String ubicacion;
-    @Column(name="school")
+    @Column(name="school", length = 100)
     private String school;
-    @Column(name="perfil")
+    @Column(name="perfil", length = 250)
     private String perfil;
     
     public Datos() {

@@ -18,11 +18,12 @@ public class Contacto {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id")
     private Long id;
-    @Column(name="mail")
+    
+    @Column(name="mail", length = 150)
     private String mail;
-    @Column(name="asunto")
+    @Column(name="asunto", length = 50)
     private String asunto;
-    @Column(name="mensaje")
+    @Column(name="mensaje", length = 250)
     private String mensaje;
 
     public Contacto() {

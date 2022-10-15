@@ -20,11 +20,11 @@ public class Soft {
     @Column(name="id")
     private Long id;
     
-    @Column(name="tag")
+    @Column(name="tag", length = 50)
     private String tag;
-    @Column(name="modal")
+    @Column(name="modal", length = 400)
     private String modal;
-    @Column(name="beneficio")
+    @Column(name="beneficio", length = 400)
     private String beneficio;
     @Column(name="porcentaje")
     private int porcentaje;

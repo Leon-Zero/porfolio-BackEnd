@@ -18,24 +18,22 @@ public class Programas {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id")
     private Long id;
-    @Column(name="tag")
+    
+    @Column(name="tag", length = 50)
     private String tag;
     @Column(name="porcentaje")
     private int porcentaje;
-    @Column(name="color")
+    @Column(name="color", length = 25)
     private String color;
-    //@Column(name="datos_id")
-    //private Long datos_id;
 
     public Programas() {
     }
 
-    public Programas(Long id, String tag, int porcentaje, String color, Long datos_id) {
+    public Programas(Long id, String tag, int porcentaje, String color) {
         this.id = id;
         this.tag = tag;
         this.porcentaje = porcentaje;
         this.color = color;
-      //  this.datos_id = datos_id;
     }
     
     

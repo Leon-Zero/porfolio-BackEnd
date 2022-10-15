@@ -20,15 +20,15 @@ public class Job {
     @Column(name="id")
     private Long id;
     
-    @Column(name="job")
+    @Column(name="job", length = 120)
     private String job;
-    @Column(name="cargo")
+    @Column(name="cargo", length = 120)
     private String cargo;
-    @Column(name="funciones")
+    @Column(name="funciones", length = 500 )
     private String funciones;
-    @Column(name="ingreso_salida")  
+    @Column(name="ingreso_salida", length = 120)  
     private String ingreso_salida;
-    @Column(name="contacto")
+    @Column(name="contacto", length = 200)
     private String contacto;
 
     public Job() {
