@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 @RestController
 @CrossOrigin(origins = "https://portfolio-lh.web.app")
+//@CrossOrigin(origins = "http://localhost:4200")
 public class DatosController {
     
     //metodos clase Datos

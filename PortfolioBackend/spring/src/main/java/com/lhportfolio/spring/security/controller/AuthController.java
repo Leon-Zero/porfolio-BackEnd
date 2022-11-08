@@ -30,6 +30,7 @@ import java.util.Set;
 @RestController
 @RequestMapping("/auth")
 @CrossOrigin(origins = "https://portfolio-lh.web.app")
+//@CrossOrigin(origins = "http://localhost:4200")
 public class AuthController {
     
     @Autowired
@@ -52,7 +53,7 @@ public class AuthController {
         if(bindingResult.hasErrors())
             return new ResponseEntity(new Mensaje("campos mal puestos o email inválido"), HttpStatus.BAD_REQUEST);
         if(usuarioService.existsByNombreUsuario(nuevoUsuario.getNombreUsuario()))
-            return new ResponseEntity(new Mensaje("ese nombre ya existe"), HttpStatus.BAD_REQUEST);
+            return new ResponseEntity(new Mensaje("ese usuario ya existe"), HttpStatus.BAD_REQUEST);
         if(usuarioService.existsByEmail(nuevoUsuario.getEmail()))
             return new ResponseEntity(new Mensaje("ese email ya existe"), HttpStatus.BAD_REQUEST);
         Usuario usuario =
