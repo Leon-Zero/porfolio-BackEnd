@@ -20,7 +20,7 @@ public class Proyecto {
     @Column(name="id")
     private Long id;
     
-    @Column(name="project_title", length = 80)
+    @Column(name="project_title", length = 250)
     private String project_title;
     @Column(name="project_text", length = 2000)
     private String project_text;
@@ -29,47 +29,47 @@ public class Proyecto {
     
     @Column(name="card_img_1", length = 2000)
     private String card_img_1;
-    @Column(name="card_icon_1", length = 100)
+    @Column(name="card_icon_1", length = 250)
     private String card_icon_1;  
-    @Column(name="card_title_1", length = 30)
+    @Column(name="card_title_1", length = 250)
     private String card_title_1; 
-    @Column(name="card_description_1", length = 50)
+    @Column(name="card_description_1", length = 250)
     private String card_description_1;
-    @Column(name="color_1", length = 50)
+    @Column(name="color_1", length = 250)
     private String color_1;
     
     // -----------
     @Column(name="card_img_2", length = 2000)
     private String card_img_2;
-    @Column(name="card_icon_2", length = 100)
+    @Column(name="card_icon_2", length = 250)
     private String card_icon_2;  
-    @Column(name="card_title_2", length = 30)
+    @Column(name="card_title_2", length = 250)
     private String card_title_2; 
-    @Column(name="card_description_2", length = 50)
+    @Column(name="card_description_2", length = 250)
     private String card_description_2;
-    @Column(name="color_2", length = 50)
+    @Column(name="color_2", length = 250)
     private String color_2;
     // ------------
     @Column(name="card_img_3", length = 2000)
     private String card_img_3;
-    @Column(name="card_icon_3", length = 100)
+    @Column(name="card_icon_3", length = 250)
     private String card_icon_3;  
-    @Column(name="card_title_3", length = 30)
+    @Column(name="card_title_3", length = 250)
     private String card_title_3; 
-    @Column(name="card_description_3", length = 50)
+    @Column(name="card_description_3", length = 250)
     private String card_description_3;
-    @Column(name="color_3", length = 50)
+    @Column(name="color_3", length = 250)
     private String color_3;
     //---------------------
     @Column(name="card_img_4", length = 2000)
     private String card_img_4;
-    @Column(name="card_icon_4", length = 100)
+    @Column(name="card_icon_4", length = 250)
     private String card_icon_4;  
-    @Column(name="card_title_4", length = 30)
+    @Column(name="card_title_4", length = 250)
     private String card_title_4; 
-    @Column(name="card_description_4", length = 50)
+    @Column(name="card_description_4", length = 250)
     private String card_description_4;
-    @Column(name="color_4", length = 50)
+    @Column(name="color_4", length = 250)
     private String color_4;
 
     public Proyecto() {
