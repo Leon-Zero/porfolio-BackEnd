@@ -27,7 +27,7 @@ public class Proyecto {
  
     //Datos de las CARDs
     
-    @Column(name="card_img_1", length = 250)
+    @Column(name="card_img_1", length = 2000)
     private String card_img_1;
     @Column(name="card_icon_1", length = 100)
     private String card_icon_1;  
@@ -39,7 +39,7 @@ public class Proyecto {
     private String color_1;
     
     // -----------
-    @Column(name="card_img_2", length = 250)
+    @Column(name="card_img_2", length = 2000)
     private String card_img_2;
     @Column(name="card_icon_2", length = 100)
     private String card_icon_2;  
@@ -50,7 +50,7 @@ public class Proyecto {
     @Column(name="color_2", length = 50)
     private String color_2;
     // ------------
-    @Column(name="card_img_3", length = 250)
+    @Column(name="card_img_3", length = 2000)
     private String card_img_3;
     @Column(name="card_icon_3", length = 100)
     private String card_icon_3;  
@@ -61,7 +61,7 @@ public class Proyecto {
     @Column(name="color_3", length = 50)
     private String color_3;
     //---------------------
-    @Column(name="card_img_4", length = 250)
+    @Column(name="card_img_4", length = 2000)
     private String card_img_4;
     @Column(name="card_icon_4", length = 100)
     private String card_icon_4;  
