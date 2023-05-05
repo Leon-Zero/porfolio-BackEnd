@@ -18,10 +18,5 @@ public class RolService {
     
     public Optional<Rol> getByRolNombre(RolNombre rolNombre){
         return rolRepository.findByRolNombre(rolNombre);
-    }
-    
-            
-            
-            
-            
+    }        
 }
